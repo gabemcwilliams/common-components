@@ -9,7 +9,7 @@ Maintained by Gabe McWilliams under Darkly Creative LLC.
 
 This repository serves as a modular toolbox for Python-based development, including:
 
-- Secure authentication helpers (e.g., Vault, MSAL)
+- Secure authentication helpers
 - Diagnostic and environment checks
 - Data plotting utilities for reporting or notebooks
 - Workflow and infrastructure helpers for ML/data engineering projects
