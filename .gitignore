@@ -1,0 +1,215 @@
+#####################  READ FIRST ########################
+# If your changes are system-specific, use .git/info/exclude instead.
+##########################################################
+
+###################  GENERAL WORKFLOW ####################
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Editor & OS Noise
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.tmp
+*.bak
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+*.so
+
+###################  PYTHON & MLOPS STACK ###################
+
+# Python cache, logs, etc.
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+.coverage
+.cache
+nosetests.xml
+*.cover
+*.py,cover
+
+# Pipenv/Poetry/PDN lock and misc
+*.lock
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# MLFlow artifacts
+mlruns/
+mlartifacts/
+
+# Notebooks
+.ipynb_checkpoints/
+profile_default/
+*.ipynb
+
+# Data (stored outside Git)
+*data*/
+*/*data*/
+*dataset*/
+*/*dataset*/
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.parquet
+
+###################  IOT / ESP32 WORKFLOW ###################
+
+# PlatformIO / CLion
+.pio/
+.pioenvs/
+.clangd/
+.ccls-cache/
+build/
+*.elf
+*.bin
+*.map
+*.hex
+*.d
+
+# Board-specific or sketch files
+*.ino.*
+*.firmware.*
+
+# Serial logs
+*.log
+serial_output.txt
+
+# Wiring diagrams / pinouts
+*.fzz
+*.sch
+*.pcb
+
+###################  BACKEND / FASTAPI ###################
+
+# FastAPI artifacts
+instance/
+*.db
+*.sqlite3
+*.sqlite3-journal
+config.py
+*.ini
+
+# Secrets, tokens
+*secret*
+*token*
+*pass*
+*.crt
+*.key
+*/*cert*/*
+*cert*
+
+###################  FRONTEND / REACT / D3 ###################
+
+# React / Next.js builds
+.next/
+node_modules/
+*.log
+*.cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# D3.js generated files
+*.svg
+
+# Figma exports (optional)
+*.png
+*.jpg
+
+###################  SYSTEMS & LANGUAGES IN ACTIVE USE ###################
+
+# Rust (used or planned for microservices or CLI)
+target/
+**/Cargo.lock
+**/Cargo.toml
+*.rs.bk
+
+# Go (used or planned for tooling or services)
+*.mod
+*.sum
+*.test
+*.exe
+*.out
+*.a
+bin/
+pkg/
+
+# C/C++ (for ESP32 / PlatformIO builds)
+*.o
+*.obj
+*.lo
+*.slo
+*.d
+*.out
+*.exe
+*.a
+*.la
+*.lib
+*.dll
+*.dylib
+*.gch
+*.pch
+
+###################  UNUSED LANGUAGES / FORMATS ###################
+
+# Julia
+*.jl.cov
+*.jl.*
+*.jl~*
+*.ji
+.julia/
+.julia_history
+.juliaenvironments/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Scala
+*.class
+*.tasty
+*.scala
+.metals/
+.bloop/
+.bsp/
+.scala-build/
+project/
+target/
+
+# Kotlin
+*.kt
+*.kts
+
+# General binaries and backups
+*.bak
+*.swp
+*.swo
+*.tmp
+*.old
+
+# Logs
+*.log
+
+# Misc compression
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
