@@ -54,7 +54,6 @@ mlartifacts/
 # Notebooks
 .ipynb_checkpoints/
 profile_default/
-*.ipynb
 
 # Data (stored outside Git)
 *data*/

@@ -1,0 +1,26 @@
+# Prefect scheduling configurations
+
+schedules:
+  - interval: 900          # Every 15 minutes
+    timezone: UTC
+    active: true
+
+  - interval: 1800         # Every 30 minutes
+    timezone: UTC
+    active: true
+
+  - interval: 3600         # Every hour
+    timezone: UTC
+    active: true
+
+  - interval: 21600        # Every 6 hours
+    timezone: UTC
+    active: true
+
+  - interval: 43200        # Every 12 hours
+    timezone: UTC
+    active: true
+
+  - interval: 86400        # Every 24 hours
+    timezone: UTC
+    active: true
